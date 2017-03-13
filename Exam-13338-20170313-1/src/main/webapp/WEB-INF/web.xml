@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Archetype Created Web Application</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>app.exam.servlet.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>film_delServlet</servlet-name>
+		<servlet-class>app.exam.servlet.film_delServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>film_delServlet</servlet-name>
+		<url-pattern>/film_delServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>film_listServlet</servlet-name>
+		<servlet-class>app.exam.servlet.film_listServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>film_listServlet</servlet-name>
+		<url-pattern>/film_listServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>film_updateServlet</servlet-name>
+		<servlet-class>app.exam.servlet.film_updateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>film_updateServlet</servlet-name>
+		<url-pattern>/film_updateServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>film_addServlet</servlet-name>
+		<servlet-class>app.exam.servlet.film_addServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>film_addServlet</servlet-name>
+		<url-pattern>/film_addServlet</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<filter>
+		<filter-name>userFilter</filter-name>
+		<filter-class>app.exam.filter.userFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>userFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+</web-app>
